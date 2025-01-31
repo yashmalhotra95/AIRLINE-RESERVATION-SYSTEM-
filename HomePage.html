@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TGVF1 Airline Reservations</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .form-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TGVF1 AIRLINE RESERVATIONS</h1>
+            <p>"Where flying becomes easy!"</p>
+        </div>
+
+        <!-- Login/Signup Section -->
+        <div class="form-section" id="auth-section">
+            <h2>Login/Signup</h2>
+            <form method="POST" action="/login">
+                <input type="number" name="phone" placeholder="Phone Number" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <a href="/signup">Create New Account</a>
+        </div>
+
+        <!-- Flight Booking Section -->
+        <div class="form-section" id="booking-section">
+            <h2>Book Flight</h2>
+            <form method="POST" action="/book">
+                <!-- Flight booking form elements -->
+            </form>
+        </div>
+
+        <!-- Manage Reservations Section -->
+        <div class="form-section" id="manage-section">
+            <h2>Your Reservations</h2>
+            <!-- Reservation details table -->
+        </div>
+    </div>
+</body>
+</html>
